@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">Tour Guide App</string>
+    <string name="kampala_description">
+        Kampala is Uganda\'s national and commercial capital bordering
+        Lake Victoria, Africa\'s largest lake. Hills covered with
+        red-tile villas and trees surround an urban centre of contemporary
+        skyscrapers. In this downtown area, the Uganda Museum explores
+        the country\'s tribal heritage through an extensive
+        collection of artefacts. On nearby Mengo Hill is Lubiri
+        Palace, the former seat of the Buganda Kingdom
+
+    </string>
+
+    <string name="kampala_moreInfo">
+
+        Elevation: 1,190 m\nArea: 189 km²\nWeather:
+        19°C, Wind W at 6 km/h, 94%
+        Humidity\nLocal time: Tuesday
+        03:15\nPopulation: 1.507 million (2014) United Nations
+
+    </string>
 </resources>

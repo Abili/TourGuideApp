@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Home">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Home">
+
     <androidx.cardview.widget.CardView
+        android:id="@+id/animation_card"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintRight_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -35,5 +41,59 @@
 
     </androidx.cardview.widget.CardView>
 
+    <LinearLayout
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/animation_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="40sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:text="Kampala"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textSize="18sp"
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:text="Capital of Uganda"
+            android:layout_height="wrap_content"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/darker_gray"
+            android:layout_height="0.5dp"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/tourkampala"
+                android:layout_width="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Lets Tour Kampala"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:textSize="18sp"
+            android:paddingLeft="10dp"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:text="@string/kampala_description"
+            android:layout_height="wrap_content"/>
+
+       <androidx.recyclerview.widget.RecyclerView
+           android:padding="10dp"
+           android:id="@+id/otherInformation"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
