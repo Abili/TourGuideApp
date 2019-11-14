@@ -18,9 +18,9 @@ import java.util.ArrayList;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import butterknife.OnClick;
 
-public class Home extends AppCompatActivity {
+
+public class Home extends AppCompatActivity implements View.OnClickListener {
     @BindView(R.id.imageSlider)
     SliderView sliderView;
 
@@ -28,7 +28,7 @@ public class Home extends AppCompatActivity {
     RecyclerView recyclerView;
 
     @BindView(R.id.tourkampala)
-    Button tour;
+    Button tourKla;
 
     ArrayList<OtherInfo> infoArrayAdapter;
 
@@ -37,6 +37,8 @@ public class Home extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         ButterKnife.bind(this);
+
+        tourKla.setOnClickListener(this);
 
         SliderAdapter adapter = new SliderAdapter(this);
 
@@ -67,9 +69,10 @@ public class Home extends AppCompatActivity {
 
 
         }
-    @OnClick(R.id.tourkampala)
-    public void onclick(View view){
-        Intent intent = new Intent(Home.this, TouristAttraction.class);
+
+    @Override
+    public void onClick(View v) {
+        Intent intent = new Intent(Home.this, InsideKampala.class);
         startActivity(intent);
     }
 }

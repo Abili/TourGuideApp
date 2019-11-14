@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_weight="2dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/restuarantName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        tools:text="Restaurants Name" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/restuarantRateing"
+            android:text="4.2"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RatingBar
+            android:id="@+id/restuantRatebar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:padding="5dp" />
+
+        <TextView
+            android:id="@+id/restuarantNumberofRaters"
+            android:text="(213)"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/restuarantLocation"
+        android:text="location"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/restuarant_image"
+        android:scaleType="centerCrop"
+        android:layout_alignParentRight="true"
+        android:layout_width="80dp"
+        android:src="@drawable/crestecrane"
+        android:layout_height="80dp"/>
+
+</RelativeLayout>
