@@ -14,11 +14,15 @@ import android.view.ViewGroup;
 
 
 public class Attractions extends Fragment {
+
+
+    // Store instance variables based on arguments passed
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
     }
+
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

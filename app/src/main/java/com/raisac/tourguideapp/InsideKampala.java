@@ -12,8 +12,11 @@ import butterknife.ButterKnife;
 
 public class InsideKampala extends AppCompatActivity {
 
-    @BindView(R.id.viewpager)ViewPager viewPager;
-     @BindView(R.id.tab_layout)TabLayout tabLayout;
+    @BindView(R.id.viewpager)
+    ViewPager viewPager;
+    @BindView(R.id.tab_layout)
+    TabLayout tabLayout;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -9,8 +9,9 @@
         android:roundIcon="@drawable/crestecrane"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Home"></activity>
-        <activity android:name=".InsideKampala"></activity>
+        <activity android:name=".RestuarantActivity"></activity>
+        <activity android:name=".Home" />
+        <activity android:name=".InsideKampala" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

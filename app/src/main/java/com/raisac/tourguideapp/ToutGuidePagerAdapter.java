@@ -9,12 +9,13 @@ public class ToutGuidePagerAdapter extends FragmentPagerAdapter {
     private String[] tabTitles = new String[]{"Restuarants", "Public  Places", "Attractions"};
     public ToutGuidePagerAdapter(FragmentManager fm) {
         super(fm);
+
     }
 
     @Override
     public Fragment getItem(int position) {
         if (position == 0) {
-            return new Restuarants();
+            return new RestuarantsFragment();
         } else if (position == 1){
             return new PublicPlaces();
         } else {

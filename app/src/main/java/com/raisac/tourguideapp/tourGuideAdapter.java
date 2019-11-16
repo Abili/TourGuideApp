@@ -45,7 +45,7 @@ public class tourGuideAdapter extends RecyclerView.Adapter<tourGuideAdapter.MyVi
 
     @Override
     public int getItemCount() {
-        return 0;
+        return tourGuides.size();
     }
     public class MyViewHolder extends RecyclerView.ViewHolder{
         @BindView(R.id.restuarantName)

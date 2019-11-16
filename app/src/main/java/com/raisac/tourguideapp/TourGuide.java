@@ -7,8 +7,7 @@ public class TourGuide {
     private  String rates;
     private int image;
 
-    public TourGuide() {
-    }
+
 
     public TourGuide(String name, String location, String raters, String rates, int image) {
         this.name = name;
