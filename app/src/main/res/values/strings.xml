@@ -20,6 +20,129 @@
 
     </string>
 
+    <string name="detail1">
+        Details\n\n
+        A premier restaurant offering the finest
+        dining experience, and bar offering one
+        of Kampala\'s most celebrated night experiences.
+        Cayenne. it rocks!!!\n\nCUISINES\n
+        Italian, Indian, Bar, Pizza, International, Pub\n\nMEALS\nBreakfast, Lunch, Dinner, Late Night\n\n
+
+        FEATURES\nDelivery, Takeout, Highchairs Available,
+        Outdoor Seating, Buffet, Seating, Street Parking,
+        Accepts American Express, Accepts Mastercard,
+        Accepts Visa, Free Wifi, Reservations,
+        Parking Available, Television, Serves Alcohol,
+        Full Bar, Table Service, Live Music
+    </string>
+    <string name="detail2">
+
+       Details\n\nCUISINES\nAfrican\n\n
+SPECIAL DIETS\nVegetarian Friendly, Vegan Options
+MEALS\nLunch, Dinner\nFEATURES\n
+Takeout, Seating, Wheelchair Accessible, Delivery, Reservations, Table Service
+    </string>
+
+    <string name="detail3">
+
+      Details\n\nPRICE RANGE\nUGX 18,450 - UGX 92,251\n\n
+
+    CUISINES\nChinese\n\nMEALS\nLunch, Dinner, Late Night\n\nFEATURES\nReservations, Seating, Takeout,
+        Outdoor Seating, Private Dining, Serves
+        Alcohol, Full Bar, Table Service
+
+    </string>
+
+    <string name="detail4">
+
+      SPECIAL DIETS\n\nVegetarian Friendly, Vegan Options\n\nMEALS\nLunch, Dinner, Late Night\n\n
+CUISINES\nItalian, Mediterranean, European, Pizza\n\nFEATURES\n
+Reservations, Seating, Parking Available, Wheelchair Accessible,\nServes Alcohol, Full Bar, Table Service, Outdoor Seating, Highchairs Available
+
+    </string>
+
+    <string name="detail5">
+
+      Details\n\n
+CUISINES\nBar, International, European\n\n
+SPECIAL DIETS\nVegetarian Friendly, Vegan Options\n\n
+MEALS\nBreakfast, Lunch, Dinner, Brunch\n\n
+FEATURES\nHighchairs Available, Reservations, Outdoor Seating,
+        Seating, Parking Available, Street Parking,
+        Free Off-Street Parking, Serves Alcohol,
+        Full Bar, Wine and Beer, Accepts Mastercard,
+        Accepts Visa, Digital Payments, Free Wifi,
+        Table Service, Takeout, Wheelchair Accessible
+
+    </string>
+
+
+    <string name="detail6">
+
+      Details\n\n
+ABOUT\nCafejavas is a full-service, quick-casual,
+        coffee-themed restaurant chain in Kampala Uganda.
+        It provides the perfect refuge from a busy days
+        shopping or a quick break from the office.
+        It is where Kampala goes for breakfast, lunch,
+        dinner, coffee and pastries. Menu items are specifically
+        designed to meet the needs of just about everyone looking
+        for a friendly informal dining experience. Great emphasis
+        is put on customer service. The staff are highly skilled,
+        trained and experienced in the hospitality industry.
+        We commit to great food, great coffee, great service,
+        an experience that will make you long for more.\n\n
+PRICE RANGE\nUGX 18,450 - UGX 73,801\n\n
+SPECIAL DIETS\nVegetarian Friendly, Vegan Options, Halal, Gluten Free Options\n\n
+MEALS\nBreakfast, Lunch, Dinner, Brunch, Late Night\n\n
+CUISINES\nCafe, European, Contemporary\n\n
+FEATURES\nTakeout, Outdoor Seating, Seating, Parking Available,
+        Street Parking, Validated Parking, Free Off-Street
+        Parking, Highchairs Available, Wheelchair Accessible
+        , Accepts Visa, Free Wifi, Reservations, Accepts
+        Credit Cards, Table Service
+
+    </string>
+
+    <string name="detail7">
+
+      Details\n\nPRICE RANGE\nUGX 18,450 - UGX 92,251\n\n
+
+    CUISINES\nChinese\n\nMEALS\nLunch, Dinner, Late Night\n\nFEATURES\nReservations, Seating, Takeout,
+        Outdoor Seating, Private Dining, Serves
+        Alcohol, Full Bar, Table Service
+
+    </string>
+
+    <string name="detail8">
+
+      Details\n\nPRICE RANGE\nUGX 18,450 - UGX 92,251\n\n
+
+    CUISINES\nChinese\n\nMEALS\nLunch, Dinner, Late Night\n\nFEATURES\nReservations, Seating, Takeout,
+        Outdoor Seating, Private Dining, Serves
+        Alcohol, Full Bar, Table Service
+
+    </string>
+
+    <string name="detail9">
+
+      Details\n\nPRICE RANGE\nUGX 18,450 - UGX 92,251\n\n
+
+    CUISINES\nChinese\n\nMEALS\nLunch, Dinner, Late Night\n\nFEATURES\nReservations, Seating, Takeout,
+        Outdoor Seating, Private Dining, Serves
+        Alcohol, Full Bar, Table Service
+
+    </string>
+
+    <string name="detail10">
+
+      Details\n\nPRICE RANGE\nUGX 18,450 - UGX 92,251\n\n
+
+    CUISINES\nChinese\n\nMEALS\nLunch, Dinner, Late Night\n\nFEATURES\nReservations, Seating, Takeout,
+        Outdoor Seating, Private Dining, Serves
+        Alcohol, Full Bar, Table Service
+
+    </string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

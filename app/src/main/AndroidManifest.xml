@@ -9,7 +9,8 @@
         android:roundIcon="@drawable/crestecrane"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RestuarantActivity"></activity>
+        <activity android:name=".DetailsActivity"></activity>
+        <activity android:name=".RestuarantActivity" />
         <activity android:name=".Home" />
         <activity android:name=".InsideKampala" />
         <activity android:name=".MainActivity">

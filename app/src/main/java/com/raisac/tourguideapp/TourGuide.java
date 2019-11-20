@@ -1,20 +1,24 @@
 package com.raisac.tourguideapp;
 
+import android.graphics.Bitmap;
+
 public class TourGuide {
     private String name;
     private String location;
     private String raters;
     private  String rates;
-    private int image;
+    private Bitmap image;
+    private String description;
 
 
 
-    public TourGuide(String name, String location, String raters, String rates, int image) {
+    public TourGuide(String name, String location, String raters, String rates, Bitmap image) {
         this.name = name;
         this.location = location;
         this.raters = raters;
         this.rates = rates;
         this.image = image;
+        this.description=description;
 
     }
 
@@ -50,12 +54,20 @@ public class TourGuide {
         this.rates = rates;
     }
 
-    public int getImage() {
+    public Bitmap getImage() {
         return image;
     }
 
-    public void setImage(int image) {
+    public void setImage(Bitmap image) {
         this.image = image;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     @Override

@@ -1,6 +1,8 @@
 package com.raisac.tourguideapp;
 
 
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -34,35 +36,65 @@ public class RestuarantsFragment extends Fragment {
 
         tourGuides = new ArrayList<>();
         restrecycler = view.findViewById(R.id.restuarants_recyclerview);
+
+        Bitmap cayenne = BitmapFactory.decodeResource(getActivity().getResources(),
+                R.drawable.cayen);
         tourGuides.add(new TourGuide("Cayenne Restaurant and Lounge", "Kira Rd, Kampala",
-                "1,447 Google reviews", "4.1", R.drawable.cayen));
+                "1,447 Google reviews", "4.1", cayenne));
 
+
+        Bitmap two_k = BitmapFactory.decodeResource(getActivity().getResources(),
+                R.drawable.twokrestuarant);
         tourGuides.add(new TourGuide("2K Restaurant", " Hoima Rd, Kampala",
-                "731 Google reviews", "4.2", R.drawable.twokrestuarant));
+                "731 Google reviews", "4.2", two_k));
 
+
+        Bitmap patio = BitmapFactory.decodeResource(getActivity().getResources(),
+                R.drawable.patioitallian);
         tourGuides.add(new TourGuide("Il Patio Italian Restaurant", "Kisozi Close, Kyagwe Rd, Kampala",
-                "394 Google reviews", "4.3", R.drawable.patioitallian));
+                "394 Google reviews", "4.3", patio));
 
+
+        Bitmap piato = BitmapFactory.decodeResource(getActivity().getResources(),
+                R.drawable.piato);
         tourGuides.add(new TourGuide("Piato", " Lumumba Ave, Kampala",
-                "1,279 Google reviews", "4.3", R.drawable.piato));
+                "1,279 Google reviews", "4.3", piato));
 
+
+        Bitmap cafe = BitmapFactory.decodeResource(getActivity().getResources(),
+                R.drawable.cafejavas);
         tourGuides.add(new TourGuide("Cafe Javas - Kampala Road", "Kampala Road, Opposite post office, Kampala",
-                "1,333 Google reviews", "4.5", R.drawable.cafejavas));
+                "1,333 Google reviews", "4.5", cafe));
 
+
+        Bitmap faze = BitmapFactory.decodeResource(getActivity().getResources(),
+                R.drawable.faze2);
         tourGuides.add(new TourGuide("Faze 2", "Plot 10 Nakasero Road",
-                "630 Google reviews", "4.1", R.drawable.faze2));
+                "630 Google reviews", "4.1", faze));
 
+
+        Bitmap famffang = BitmapFactory.decodeResource(getActivity().getResources(),
+                R.drawable.fangfang);
         tourGuides.add(new TourGuide("Fang Fang Chinese Restaurant", " Plot 1, Conville Street",
-                "284 Google reviews", "4.1", R.drawable.fangfang));
+                "284 Google reviews", "4.1", famffang));
 
+
+        Bitmap seven_seas = BitmapFactory.decodeResource(getActivity().getResources(),
+                R.drawable.sevenseas);
         tourGuides.add(new TourGuide("Seven Seas", "Ternan Ave, Kampala",
-                "26 Google reviews", "4.2", R.drawable.sevenseas));
+                "26 Google reviews", "4.2",seven_seas));
 
+
+        Bitmap Haandi = BitmapFactory.decodeResource(getActivity().getResources(),
+                R.drawable.haundai);
         tourGuides.add(new TourGuide("Haandi kampala restaurant ltd", "Haandi kampala restaurant ltd",
-                "618 Google reviews", "4.2", R.drawable.haundai));
+                "618 Google reviews", "4.2", Haandi));
 
+
+        Bitmap amagara = BitmapFactory.decodeResource(getActivity().getResources(),
+                R.drawable.amagara);
         tourGuides.add(new TourGuide("Amagara Cafe Bistro", "Colville St, Kampala",
-                "313 Google reviews", "4.1", R.drawable.amagara));
+                "313 Google reviews", "4.1", amagara));
 
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity());
