@@ -29,7 +29,6 @@ public class SliderAdapter extends SliderViewAdapter<SliderAdapter.SliderAdapter
 
     @Override
     public void onBindViewHolder(SliderAdapterVH viewHolder, int position) {
-        viewHolder.textViewDescription.setText("Kampala City " + position);
 
         switch (position) {
             case 0:
@@ -66,8 +65,10 @@ public class SliderAdapter extends SliderViewAdapter<SliderAdapter.SliderAdapter
     class SliderAdapterVH extends SliderViewAdapter.ViewHolder {
 
         View itemView;
-        @BindView(R.id.iv_auto_image_slider) ImageView imageViewBackground;
-        @BindView(R.id.tv_auto_image_slider) TextView textViewDescription;
+        @BindView(R.id.iv_auto_image_slider)
+        ImageView imageViewBackground;
+        @BindView(R.id.tv_auto_image_slider)
+        TextView textViewDescription;
 
         public SliderAdapterVH(View itemView) {
             super(itemView);

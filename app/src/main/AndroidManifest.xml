@@ -9,10 +9,16 @@
         android:roundIcon="@drawable/crestecrane"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DetailsActivity"></activity>
-        <activity android:name=".RestuarantActivity" />
-        <activity android:name=".Home" />
-        <activity android:name=".InsideKampala" />
+        <activity android:name=".RestuarantDetailsActivity"
+            android:label="Restuarants"/>
+        <activity android:name=".AttractionsDetailsActivity"
+            android:label="Attractions"/>
+        <activity android:name=".PublicPlacesDetailsActivity"
+            android:label="Public Places"/>
+        <activity android:name=".Home"
+            android:label="Home"/>
+        <activity android:name=".InsideKampala"
+            android:label="Inside Kampala"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

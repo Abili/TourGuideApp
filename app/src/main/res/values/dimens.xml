@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="width_height_80">80dp</dimen>
+    <dimen name="textsize_18">18sp</dimen>
+    <dimen name="textsize_20">20sp</dimen>
+    <dimen name="zero_dp">0dp</dimen>
+    <dimen name="padding_margin_10">10dp</dimen>
+    <dimen name="heigh_250">250dp</dimen>
+    <dimen name="margin_height20">20dp</dimen>
+    <dimen name="height300">300dp</dimen>
+    <dimen name="indicator_margn">15dp</dimen>
+    <dimen name="indicator_padding">3dp</dimen>
+    <dimen name="indicator_radius">2dp</dimen>
+    <dimen name="textsize_40">40sp</dimen>
+    <dimen name="margin_50">50dp</dimen>
+    <dimen name="radius_6dp">6dp</dimen>
+</resources>

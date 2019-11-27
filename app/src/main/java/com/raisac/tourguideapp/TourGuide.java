@@ -10,7 +10,9 @@ public class TourGuide {
     private Bitmap image;
     private String description;
 
-
+/*
+a constructor that takes in the nam, location, ratersm rates,and image
+ */
 
     public TourGuide(String name, String location, String raters, String rates, Bitmap image) {
         this.name = name;
@@ -22,6 +24,20 @@ public class TourGuide {
 
     }
 
+    /*
+    constructor for an activity that does not have the rates and the raters
+     */
+    public TourGuide(String name, String location, Bitmap image) {
+        this.name = name;
+        this.location = location;
+        this.raters = raters;
+        this.rates = rates;
+        this.image = image;
+        this.description=description;
+
+    }
+
+    //creater the getters and setters
     public String getName() {
         return name;
     }

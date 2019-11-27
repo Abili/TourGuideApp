@@ -10,7 +10,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:id="@+id/restuarants_recyclerview"
-        android:padding="10dp"
+        android:padding="@dimen/padding_margin_10"
         android:layout_height="match_parent"/>
 
 </FrameLayout>

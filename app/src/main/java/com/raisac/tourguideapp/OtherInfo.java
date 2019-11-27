@@ -1,5 +1,10 @@
 package com.raisac.tourguideapp;
 
+
+/*
+this object class is for the other information in found in the home page, decribing the city
+for example elevation, climate, weather etc.
+ */
 public class OtherInfo {
 
     private String consition1;

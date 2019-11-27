@@ -15,8 +15,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-import butterknife.BindView;
-
 
 public class RestuarantsFragment extends Fragment {
 
@@ -39,69 +37,69 @@ public class RestuarantsFragment extends Fragment {
 
         Bitmap cayenne = BitmapFactory.decodeResource(getActivity().getResources(),
                 R.drawable.cayen);
-        tourGuides.add(new TourGuide("Cayenne Restaurant and Lounge", "Kira Rd, Kampala",
-                "1,447 Google reviews", "4.1", cayenne));
+        tourGuides.add(new TourGuide(getString(R.string.cayen), getString(R.string.cayen_location),
+                getString(R.string.cayen_raters), getString(R.string.cayen_rates), cayenne));
 
 
         Bitmap two_k = BitmapFactory.decodeResource(getActivity().getResources(),
                 R.drawable.twokrestuarant);
-        tourGuides.add(new TourGuide("2K Restaurant", " Hoima Rd, Kampala",
-                "731 Google reviews", "4.2", two_k));
+        tourGuides.add(new TourGuide(getString(R.string.two_K_restuarant), getString(R.string.two_k_location),
+                getString(R.string.two_k_raters), getString(R.string.two_k_rates), two_k));
 
 
         Bitmap patio = BitmapFactory.decodeResource(getActivity().getResources(),
                 R.drawable.patioitallian);
-        tourGuides.add(new TourGuide("Il Patio Italian Restaurant", "Kisozi Close, Kyagwe Rd, Kampala",
-                "394 Google reviews", "4.3", patio));
+        tourGuides.add(new TourGuide(getString(R.string.patio_restuarant), getString(R.string.patio_location),
+                getString(R.string.patio_raters), getString(R.string.patio_rates), patio));
 
 
         Bitmap piato = BitmapFactory.decodeResource(getActivity().getResources(),
                 R.drawable.piato);
-        tourGuides.add(new TourGuide("Piato", " Lumumba Ave, Kampala",
-                "1,279 Google reviews", "4.3", piato));
+        tourGuides.add(new TourGuide(getString(R.string.piato_restuarant), getString(R.string.piato_location),
+                getString(R.string.piato_raters), getString(R.string.piato_rates), piato));
 
 
         Bitmap cafe = BitmapFactory.decodeResource(getActivity().getResources(),
                 R.drawable.cafejavas);
-        tourGuides.add(new TourGuide("Cafe Javas - Kampala Road", "Kampala Road, Opposite post office, Kampala",
-                "1,333 Google reviews", "4.5", cafe));
+        tourGuides.add(new TourGuide(getString(R.string.cafe_javas), getString(R.string.cafe_javas_location),
+                getString(R.string.cafe_raters), getString(R.string.cafe_rates), cafe));
 
 
         Bitmap faze = BitmapFactory.decodeResource(getActivity().getResources(),
                 R.drawable.faze2);
-        tourGuides.add(new TourGuide("Faze 2", "Plot 10 Nakasero Road",
-                "630 Google reviews", "4.1", faze));
+        tourGuides.add(new TourGuide(getString(R.string.faze_two), getString(R.string.faze_two_location),
+                getString(R.string.faze_two_raters), getString(R.string.faze_two_rates), faze));
 
 
         Bitmap famffang = BitmapFactory.decodeResource(getActivity().getResources(),
                 R.drawable.fangfang);
-        tourGuides.add(new TourGuide("Fang Fang Chinese Restaurant", " Plot 1, Conville Street",
-                "284 Google reviews", "4.1", famffang));
+        tourGuides.add(new TourGuide(getString(R.string.fang_fang_restuarant), getString(R.string.fang_fang_location),
+                getString(R.string.fang_fang_raters), getString(R.string.fang_fang_rates), famffang));
 
 
         Bitmap seven_seas = BitmapFactory.decodeResource(getActivity().getResources(),
                 R.drawable.sevenseas);
-        tourGuides.add(new TourGuide("Seven Seas", "Ternan Ave, Kampala",
-                "26 Google reviews", "4.2",seven_seas));
+        tourGuides.add(new TourGuide(getString(R.string.seven_seas_restuarant), getString(R.string.seven_seas_location),
+                getString(R.string.seven_seas_raters), getString(R.string.seven_seas_rates), seven_seas));
 
 
         Bitmap Haandi = BitmapFactory.decodeResource(getActivity().getResources(),
                 R.drawable.haundai);
-        tourGuides.add(new TourGuide("Haandi kampala restaurant ltd", "Haandi kampala restaurant ltd",
-                "618 Google reviews", "4.2", Haandi));
+        tourGuides.add(new TourGuide(getString(R.string.haudai_retsuarant), getString(R.string.haudai_location),
+                getString(R.string.haudai_raters), getString(R.string.haudai_rates), Haandi));
 
 
         Bitmap amagara = BitmapFactory.decodeResource(getActivity().getResources(),
                 R.drawable.amagara);
-        tourGuides.add(new TourGuide("Amagara Cafe Bistro", "Colville St, Kampala",
-                "313 Google reviews", "4.1", amagara));
+        tourGuides.add(new TourGuide(getString(R.string.amagar_restuarant), getString(R.string.amagara_location),
+                getString(R.string.amagara_raters), getString(R.string.amagara_rates), amagara));
 
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity());
         restrecycler.setLayoutManager(layoutManager);
 
-        tourGuideAdapter tourGuideAdapter = new tourGuideAdapter(tourGuides, getActivity());
-        restrecycler.setAdapter(tourGuideAdapter);
+        RestuarantsAdapter restuarantsAdapter = new RestuarantsAdapter(tourGuides, getActivity());
+        restrecycler.setAdapter(restuarantsAdapter);
 
         DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(restrecycler.getContext(),
                 layoutManager.getOrientation());

@@ -14,10 +14,10 @@
 
     <ImageView
         android:id="@+id/iv_gif_container"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="@dimen/width_height_80"
+        android:layout_height="@dimen/width_height_80"
         android:layout_gravity="bottom|start"
-        android:layout_margin="50dp" />
+        android:layout_margin="@dimen/margin_50" />
 
 
     <FrameLayout
@@ -31,11 +31,11 @@
             android:id="@+id/tv_auto_image_slider"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="25dp"
-            android:padding="6dp"
-            android:textColor="#FFF"
-            android:textSize="18sp" />
+            android:layout_marginTop="@dimen/padding_margin_10"
+            android:layout_marginBottom="@dimen/margin_height20"
+            android:padding="@dimen/padding_margin_10"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_18" />
 
     </FrameLayout>
 

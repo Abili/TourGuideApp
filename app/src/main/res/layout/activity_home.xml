@@ -3,10 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".Home">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:context=".Home">
@@ -23,47 +23,69 @@
         <com.smarteist.autoimageslider.SliderView
             android:id="@+id/imageSlider"
             android:layout_width="match_parent"
-            android:layout_height="300dp"
+            android:layout_height="@dimen/height300"
             app:sliderAnimationDuration="600"
             app:sliderAutoCycleDirection="back_and_forth"
             app:sliderAutoCycleEnabled="true"
             app:sliderCircularHandlerEnabled="true"
             app:sliderIndicatorAnimationDuration="600"
             app:sliderIndicatorGravity="center_horizontal|bottom"
-            app:sliderIndicatorMargin="15dp"
+            app:sliderIndicatorMargin="@dimen/indicator_margn"
             app:sliderIndicatorOrientation="horizontal"
-            app:sliderIndicatorPadding="3dp"
-            app:sliderIndicatorRadius="2dp"
-            app:sliderIndicatorSelectedColor="#5A5A5A"
-            app:sliderIndicatorUnselectedColor="#FFF"
+            app:sliderIndicatorPadding="@dimen/indicator_padding"
+            app:sliderIndicatorRadius="@dimen/indicator_radius"
+            app:sliderIndicatorSelectedColor="@color/slider_indicator_color"
+            app:sliderIndicatorUnselectedColor="@color/white"
             app:sliderScrollTimeInSec="1"
             app:sliderStartAutoCycle="true" />
 
     </androidx.cardview.widget.CardView>
 
     <LinearLayout
+        android:layout_below="@+id/animation_card"
         android:orientation="vertical"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/animation_card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:typeface="serif"
+                android:textSize="@dimen/textsize_40"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="@dimen/padding_margin_10"
+                android:paddingLeft="@dimen/padding_margin_10"
+                android:layout_width="0dp"
+                android:text="@string/kampala"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/tourkampala"
+                android:elevation="4dp"
+                android:backgroundTint="@color/white"
+                app:fabSize="normal"
+                android:src="@drawable/ic_send"
+                android:layout_width="wrap_content"
+                android:layout_margin="@dimen/padding_margin_10"
+                android:text="@string/lets_tour_kampala"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
         <TextView
-            android:textSize="40sp"
-            android:textColor="@android:color/black"
-            android:layout_marginTop="10dp"
-            android:paddingLeft="10dp"
+            android:typeface="serif"
+            android:textSize="@dimen/textsize_18"
+            android:paddingLeft="@dimen/padding_margin_10"
             android:layout_width="wrap_content"
-            android:text="Kampala"
-            android:layout_height="wrap_content"/>
-        <TextView
-            android:textSize="18sp"
-            android:paddingLeft="10dp"
-            android:layout_width="wrap_content"
-            android:text="Capital of Uganda"
+            android:text="@string/capital_of_uganda"
             android:layout_height="wrap_content"/>
         <View
             android:layout_width="match_parent"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="@dimen/padding_margin_10"
             android:background="@android:color/darker_gray"
             android:layout_height="0.5dp"/>
 
@@ -71,29 +93,27 @@
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <Button
-                android:id="@+id/tourkampala"
-                android:layout_width="wrap_content"
-                android:layout_margin="10dp"
-                android:text="Lets Tour Kampala"
-                android:layout_height="wrap_content"/>
 
         </LinearLayout>
 
         <TextView
-            android:textSize="18sp"
-            android:paddingLeft="10dp"
+            android:layout_marginTop="@dimen/padding_margin_10"
+            android:typeface="serif"
+            android:textSize="@dimen/textsize_18"
+            android:paddingLeft="@dimen/padding_margin_10"
             android:textColor="@android:color/black"
             android:layout_width="wrap_content"
             android:text="@string/kampala_description"
             android:layout_height="wrap_content"/>
 
        <androidx.recyclerview.widget.RecyclerView
-           android:padding="10dp"
+           android:layout_marginTop="@dimen/padding_margin_10"
+           android:padding="@dimen/padding_margin_10"
            android:id="@+id/otherInformation"
            android:layout_width="match_parent"
            android:layout_height="wrap_content"/>
     </LinearLayout>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>
 </ScrollView>
